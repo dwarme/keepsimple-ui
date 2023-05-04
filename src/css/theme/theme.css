@@ -425,45 +425,6 @@ strong {
     cursor: default
 }
 
-.button:lang(ar) {
-    letter-spacing: 0;
-    font-family: SF Pro AR, SF Pro Gulf, SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button:lang(ja) {
-    letter-spacing: 0;
-    font-family: SF Pro JP, SF Pro Text, SF Pro Icons, AOS Icons, Hiragino Kaku Gothic Pro, ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button:lang(ko) {
-    letter-spacing: 0;
-    font-family: SF Pro KR, SF Pro Text, SF Pro Icons, AOS Icons, Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button:lang(zh) {
-    letter-spacing: 0
-}
-
-.button:lang(th) {
-    font-family: SF Pro TH, SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button:lang(zh-CN) {
-    font-family: SF Pro SC, SF Pro Text, SF Pro Icons, AOS Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button:lang(zh-HK) {
-    font-family: SF Pro HK, SF Pro Text, SF Pro Icons, AOS Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button:lang(zh-MO) {
-    font-family: SF Pro HK, SF Pro TC, SF Pro Text, SF Pro Icons, AOS Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button:lang(zh-TW) {
-    font-family: SF Pro TC, SF Pro Text, SF Pro Icons, AOS Icons, PingFang TC, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
 .button:hover {
     background: #0077ed
 }
@@ -560,45 +521,6 @@ strong {
     --sk-button-margin-vertical: 22px
 }
 
-.button-super:lang(ar) {
-    letter-spacing: 0;
-    font-family: SF Pro AR, SF Pro Gulf, SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-super:lang(ja) {
-    letter-spacing: 0;
-    font-family: SF Pro JP, SF Pro Text, SF Pro Icons, AOS Icons, Hiragino Kaku Gothic Pro, ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-super:lang(ko) {
-    letter-spacing: 0;
-    font-family: SF Pro KR, SF Pro Text, SF Pro Icons, AOS Icons, Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-super:lang(zh) {
-    letter-spacing: 0
-}
-
-.button-super:lang(th) {
-    font-family: SF Pro TH, SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-super:lang(zh-CN) {
-    font-family: SF Pro SC, SF Pro Text, SF Pro Icons, AOS Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-super:lang(zh-HK) {
-    font-family: SF Pro HK, SF Pro Text, SF Pro Icons, AOS Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-super:lang(zh-MO) {
-    font-family: SF Pro HK, SF Pro TC, SF Pro Text, SF Pro Icons, AOS Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-super:lang(zh-TW) {
-    font-family: SF Pro TC, SF Pro Text, SF Pro Icons, AOS Icons, PingFang TC, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
 .button-super.button-block {
     border-radius: 12px;
     --sk-button-margin-horizontal: 14px;
@@ -617,45 +539,6 @@ strong {
     --sk-button-margin-vertical: 18px
 }
 
-.button-elevated:lang(ar) {
-    letter-spacing: 0;
-    font-family: SF Pro AR, SF Pro Gulf, SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-elevated:lang(ja) {
-    letter-spacing: 0;
-    font-family: SF Pro JP, SF Pro Text, SF Pro Icons, AOS Icons, Hiragino Kaku Gothic Pro, ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-elevated:lang(ko) {
-    letter-spacing: 0;
-    font-family: SF Pro KR, SF Pro Text, SF Pro Icons, AOS Icons, Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-elevated:lang(zh) {
-    letter-spacing: 0
-}
-
-.button-elevated:lang(th) {
-    font-family: SF Pro TH, SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-elevated:lang(zh-CN) {
-    font-family: SF Pro SC, SF Pro Text, SF Pro Icons, AOS Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-elevated:lang(zh-HK) {
-    font-family: SF Pro HK, SF Pro Text, SF Pro Icons, AOS Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-elevated:lang(zh-MO) {
-    font-family: SF Pro HK, SF Pro TC, SF Pro Text, SF Pro Icons, AOS Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-elevated:lang(zh-TW) {
-    font-family: SF Pro TC, SF Pro Text, SF Pro Icons, AOS Icons, PingFang TC, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
 .button-elevated.button-block {
     border-radius: 10px;
     --sk-button-margin-horizontal: 11px;
@@ -672,45 +555,6 @@ strong {
     padding: 4px 11px;
     --sk-button-margin-horizontal: 10px;
     --sk-button-margin-vertical: 10px
-}
-
-.button-reduced:lang(ar) {
-    letter-spacing: 0;
-    font-family: SF Pro AR, SF Pro Gulf, SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-reduced:lang(ja) {
-    letter-spacing: 0;
-    font-family: SF Pro JP, SF Pro Text, SF Pro Icons, AOS Icons, Hiragino Kaku Gothic Pro, ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3, ãƒ¡ã‚¤ãƒªã‚ª, Meiryo, ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-reduced:lang(ko) {
-    letter-spacing: 0;
-    font-family: SF Pro KR, SF Pro Text, SF Pro Icons, AOS Icons, Apple Gothic, HY Gulim, MalgunGothic, HY Dotum, Lexi Gulim, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-reduced:lang(zh) {
-    letter-spacing: 0
-}
-
-.button-reduced:lang(th) {
-    font-family: SF Pro TH, SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-reduced:lang(zh-CN) {
-    font-family: SF Pro SC, SF Pro Text, SF Pro Icons, AOS Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-reduced:lang(zh-HK) {
-    font-family: SF Pro HK, SF Pro Text, SF Pro Icons, AOS Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-reduced:lang(zh-MO) {
-    font-family: SF Pro HK, SF Pro TC, SF Pro Text, SF Pro Icons, AOS Icons, PingFang HK, Helvetica Neue, Helvetica, Arial, sans-serif
-}
-
-.button-reduced:lang(zh-TW) {
-    font-family: SF Pro TC, SF Pro Text, SF Pro Icons, AOS Icons, PingFang TC, Helvetica Neue, Helvetica, Arial, sans-serif
 }
 
 .button-reduced.button-block {
