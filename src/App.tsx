@@ -1,26 +1,59 @@
-import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import './css/theme/theme.css'
+import './css/theme/typography.css'
+import './css/theme/animation.css'
+import './css/theme/nav/localnav.css'
+import './css/template/grid-tile.css'
+import Tiles from './components/template/Grid/Tiles/Tiles';
+import LocalNav from './components/template/NavBar/LocalNav/LocalNav';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <LocalNav
+        title={{
+          title: 'Daouda Warme',
+          link: '/'
+        }}
+
+        menu={{
+          items: [
+
+            {
+              title: 'Overview',
+              link: '/',
+              active: true
+            },
+            {
+              title: 'Works',
+              link: '/works',
+            },
+            {
+              title: 'Resume',
+              link: '/resume'
+            },
+          ],
+          actions: [
+            {
+              title: 'Contact',
+              link: '/contact',
+            }
+          ]
+        }}
+      />
+      <main>
+        <Tiles>
+          <Tiles.Full></Tiles.Full>
+          <Tiles.Half></Tiles.Half>
+          <Tiles.Half></Tiles.Half>
+          <Tiles.Full></Tiles.Full>
+          <Tiles.Half></Tiles.Half>
+
+          <Tiles.Half></Tiles.Half>
+        </Tiles>
+      </main>
+    </>
   );
 }
 

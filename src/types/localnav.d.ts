@@ -23,6 +23,7 @@ export interface ItemProps{
     title: string;
     link: string;
     className?: string;
+    active?: boolean;
 }
 
 export interface ActionsProps{
