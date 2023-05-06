@@ -8,18 +8,18 @@ interface HalfProps {
     onOpen?: () => void;
 }
 
-const Half: React.FC<HalfProps> = ({ children, className, onOpen}) => {
+const Half: React.FC<HalfProps> = ({ children, className, onOpen }) => {
 
-    const refEl = useRef<HTMLDivElement>(null);
+    const tileRef = useRef<HTMLDivElement>(null);
 
-    useEffect(()=>{
-        refEl.current && intersectionObserver(refEl.current, ()=>{
-            refEl.current?.classList.add('appear', 'animation')
+    useEffect(() => {
+        tileRef.current && intersectionObserver(tileRef.current, () => {
+            tileRef.current?.classList.add('appear', 'animation')
         })
     }, [])
 
     return (
-        <div ref={refEl} className={`tile half ${className ?? ''}`}>
+        <div ref={tileRef} className={`tile half ${className ?? ''}`}>
             <div className="front-face">
                 {children}
                 <OpenTile onClick={onOpen} />

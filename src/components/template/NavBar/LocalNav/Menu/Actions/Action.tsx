@@ -5,11 +5,11 @@ const Action: React.FC<ActionProps> = ({title, link, className}) => {
     return (
         <a
             className={`localnav-button button ${className ?? ''}`}
-            style={{ display: 'none' }}
+            
             href={link}
         >   
             {title}
-            <span className="localnav-action-product">Jobs at Apple</span>
+            <span className="localnav-action-product">{title}</span>
         </a>
     )
 }

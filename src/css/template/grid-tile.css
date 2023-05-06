@@ -1165,7 +1165,6 @@
     opacity: 0
 }
 
-
 .section-tiles-grid {
     position: relative;
     padding-top: 50px;
@@ -1302,7 +1301,6 @@
         transition-timing-function: cubic-bezier(0.5, 1, 0.89, 1)
     }
 }
-
 
 .acmi .back-face .backface-copy sup {
     font-size: 0.6em
