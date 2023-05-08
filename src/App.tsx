@@ -1,17 +1,17 @@
 
 import './App.css';
-import './css/theme/theme.css'
-import './css/theme/typography.css'
-import './css/theme/animation.css'
-import './css/theme/nav/localnav.css'
-import './css/theme/footer.css'
-import './css/template/grid-tile.css'
-import './css/theme/modal.css'
-import Tiles from './components/template/Grid/Tiles/Tiles';
-import LocalNav from './components/template/NavBar/LocalNav/LocalNav';
-import Footer from './components/template/Footer/Footer';
-import Gallery from './components/template/Gallery/Gallery';
-import Modal from './components/overlay/Modal/Modal';
+import './lib/css/theme/theme.css'
+import './lib/css/theme/typography.css'
+import './lib/css/theme/animation.css'
+import './lib/css/theme/nav/localnav.css'
+import './lib/css/theme/footer.css'
+import './lib/css/template/grid-tile.css'
+import './lib/css/theme/modal.css'
+import Tiles from './lib/components/template/Grid/Tiles/Tiles';
+import LocalNav from './lib/components/template/NavBar/LocalNav/LocalNav';
+import Footer from './lib/components/template/Footer/Footer';
+import Gallery from './lib/components/template/Gallery/Gallery';
+import Modal from './lib/components/overlay/Modal/Modal';
 
 function App() {
   return (
