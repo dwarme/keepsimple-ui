@@ -9,10 +9,10 @@
     line-height: 1.33337;
     font-weight: 400;
     letter-spacing: -.01em;
-    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: var(--tile-font-family-primary);
     background: var(--footer-background);
     color: var(--footer-text-color);
-    min-width: 1024px;
+    width:100%;
     overflow: hidden;
     position: relative;
     z-index: 1;

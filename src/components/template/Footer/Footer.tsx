@@ -1,4 +1,4 @@
-import Section from "../../layout/Selection/Section";
+import Section from "../../layout/Section/Section";
 
 interface FooterProps {
     copyright: string;

@@ -8,30 +8,30 @@
     height: 0;
     visibility: hidden;
     z-index: -1;
-    x-content: "ac-localnav:large";
+    x-content: "localnav:large";
 }
 
 #localnav-viewport-emitter::before {
-    content: "ac-localnav:large";
+    content: "localnav:large";
 }
 
 @media only screen and (max-width: 1023px) {
     #localnav-viewport-emitter {
-        x-content: "ac-localnav:medium";
+        x-content: "localnav:medium";
     }
 
     #localnav-viewport-emitter::before {
-        content: "ac-localnav:medium";
+        content: "localnav:medium";
     }
 }
 
 @media only screen and (max-width: 767px) {
     #localnav-viewport-emitter {
-        x-content: "ac-localnav:small";
+        x-content: "localnav:small";
     }
 
     #localnav-viewport-emitter::before {
-        content: "ac-localnav:small";
+        content: "localnav:small";
     }
 }
 
@@ -1109,9 +1109,9 @@
 }
 
 .localnav-title {
-    font-size: 28px;
-    line-height: 1.8573;
-    font-weight: 300;
+    font-size: 21px;
+    line-height: 1.8573;;
+    font-weight: 600;
     letter-spacing: 0em;
     cursor: default;
     display: block;
@@ -1126,7 +1126,7 @@
     .localnav-title {
         font-size: 20px;
         line-height: 2.4;
-        font-weight: 300;
+        font-weight: 600;
         letter-spacing: 0em;
     }
 }
