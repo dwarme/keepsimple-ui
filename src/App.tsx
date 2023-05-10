@@ -18,7 +18,7 @@ function App() {
     <>
       <LocalNav
         title={{
-          title: 'Daouda Warme',
+          title: 'Keepsimple UI',
           link: '/'
         }}
 
@@ -31,17 +31,13 @@ function App() {
               active: true
             },
             {
-              title: 'Works',
-              link: '/works',
-            },
-            {
-              title: 'Resume',
-              link: '/resume'
+              title: 'Docs',
+              link: '/documentation',
             },
           ],
           actions: [
             {
-              title: 'Contact',
+              title: 'Contact Us',
               link: '/contact',
             }
           ]
@@ -50,7 +46,11 @@ function App() {
       <main>
         <Tiles>
           <Tiles.Full></Tiles.Full>
-          <Tiles.Half></Tiles.Half>
+          <Tiles.Half 
+            button={{
+              icon: 'arrow'
+            }}
+          ></Tiles.Half>
           <Tiles.Half></Tiles.Half>
           <Tiles.Full></Tiles.Full>
           <Tiles.Half></Tiles.Half>
@@ -73,7 +73,7 @@ function App() {
       <button id="modal-toggle-047274" className='button'>Open Modal</button>
       
       <Footer
-        copyright='Copyright © 2023 Daouda Warme. All rights reserved.'
+        copyright='Copyright © 2023 Keepsimple UI. All rights reserved.'
         legalLinks={[
           {
             title: 'Privacy Policy',

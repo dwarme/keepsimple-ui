@@ -5,10 +5,15 @@ import { intersectionObserver } from "../../../../utils/viewport-util";
 interface HalfProps {
     children?: ReactNode;
     className?: string;
-    onOpen?: () => void;
+    button?:{
+        id?: string;
+        className?: string;
+        icon?: 'plus' | 'arrow';
+        onClick?: (event: React.MouseEvent)=> void;
+    }
 }
 
-const Half: React.FC<HalfProps> = ({ children, className, onOpen }) => {
+const Half: React.FC<HalfProps> = ({ children, className, button, }) => {
 
     const tileRef = useRef<HTMLDivElement>(null);
 
@@ -22,7 +27,7 @@ const Half: React.FC<HalfProps> = ({ children, className, onOpen }) => {
         <div ref={tileRef} className={`tile half ${className ?? ''}`}>
             <div className="front-face">
                 {children}
-                <OpenTile onClick={onOpen} />
+                <OpenTile {...button} />
             </div>
         </div>
     )

@@ -5,10 +5,15 @@ import { intersectionObserver } from "../../../../utils/viewport-util";
 interface FullProps{
     children?: ReactNode;
     className?: string;
-    onOpen?: ()=>void
+    button?:{
+        id?: string;
+        className?: string;
+        icon?: 'plus' | 'arrow';
+        onClick?: (event: React.MouseEvent)=> void;
+    }
 }
 
-const Full: React.FC<FullProps> = ({children, className, onOpen})=>{
+const Full: React.FC<FullProps> = ({children, className, button})=>{
     const tileRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -21,7 +26,7 @@ const Full: React.FC<FullProps> = ({children, className, onOpen})=>{
         <div ref={tileRef} className={`tile full ${className}`}>
             <div className="front-face">
                 {children}
-                <OpenTile onClick={onOpen}/>
+                <OpenTile {...button}/>
             </div>
         </div>
     )

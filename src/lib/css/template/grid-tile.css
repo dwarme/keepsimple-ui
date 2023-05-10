@@ -663,6 +663,7 @@
     fill: #fff0;
 }
 
+
 .tile .flip-tile-button.icon-wrapper .icon  svg.plus-icon path:nth-child(1){
     fill: #000;
 }
@@ -674,6 +675,26 @@
 .theme-dark .tile .flip-tile-button.icon-wrapper .icon:not(.white)  svg.plus-icon path:nth-child(1)
 {
     fill: rgba(135, 135, 140, 0.922);
+}
+
+.theme-dark .tile .flip-tile-button.icon-wrapper  svg.plus-icon path:nth-child(1)
+{
+    fill: rgba(135, 135, 140, 0.922);
+}
+
+.tile .flip-tile-button.icon-wrapper .icon.arrow-icon{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #1d1d1f;
+}
+
+.theme-dark .tile .flip-tile-button.icon-wrapper .icon.arrow-icon {
+    color: #1d1d1f;
+    background-color: rgba(135, 135, 140, 0.922);
 }
 
 .tile.full .back-face {
