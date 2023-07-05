@@ -8,7 +8,6 @@ const Gallery: React.FC = () => {
             </div>
             
             <div className="card-gallery">
-            {new Array(3).fill(0).map(item=>
                 <div className="gallery-item" tabIndex={-1}>
                     <div className="container" >
                         <div className="gallery-content">
@@ -38,7 +37,7 @@ const Gallery: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                )}
+                
                 {/* paddev */}
             </div>
         </section>
