@@ -64,9 +64,8 @@ function App() {
       
       <Modal toggleId='modal-toggle-047274' open={true}>
         <div className="modal-copy">
-          <p>From your heart rate to your menstrual cycle, apps and devices for your health can give you insight into some of your most personal details. With the Health app, you’re in charge of what information you’d like to include, what not to, and who has access to&nbsp;it.</p>
-          <p>When you do want to securely share your health data from the Health app with your doctors, they’ll see the data you shared in a dashboard in the provider’s health records&nbsp;system.</p>
-          <p>All of your data is encrypted and only accessible with your passcode, Touch&nbsp;ID, or Face&nbsp;ID. So however you use the Health app, you’re always in control of your&nbsp;data.</p>
+          <p>Some text</p>
+          <p>Some text</p>
         </div>
       </Modal>
 
