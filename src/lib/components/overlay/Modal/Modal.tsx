@@ -3,21 +3,24 @@ import useModal from "../../../hooks/useModal";
 
 interface ModalProps{
     children: ReactNode;
+    className?: string;
     sizeClassName?: string;
     toggleId?: string;
     open?: boolean;
+    onClose?: ()=>void;
 }
 
-const Modal: React.FC<ModalProps> = ({children, sizeClassName = 'large-8 medium-10', open, toggleId}) => {
+const Modal: React.FC<ModalProps> = ({children, className='', sizeClassName = 'large-8 medium-10', open, toggleId,onClose}) => {
     
     const {
         isModalOpen, 
         modalContentOutsideRef, 
         closeModal
-    } = useModal({open, toggleId});
+    } = useModal({open, toggleId, onClose});
     
+
     return (
-        <div className={`modal modal-standard ${isModalOpen ? 'modal-open' : ''}`} role="dialog" tabIndex={-1}>
+        <div className={`modal modal-standard ${isModalOpen ? 'modal-open' : ''} ${className}`} role="dialog" tabIndex={-1}>
             <div className="content-table">
                 <div className="content-cell">
                     <div className="content-wrapper">

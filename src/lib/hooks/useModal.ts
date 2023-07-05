@@ -3,9 +3,10 @@ import { useEffect, useRef, useState } from "react";
 interface Props{
     open?: boolean;
     toggleId?: string;
+    onClose?: ()=> void;
 }
 
-const useModal = ({open, toggleId}: Props)=>{
+const useModal = ({open, toggleId, onClose}: Props)=>{
     const modalContentOutsideRef = useRef<HTMLDivElement>(null);
     const [isModalOpen, setOpen] = useState(open ?? false)
 
@@ -17,6 +18,8 @@ const useModal = ({open, toggleId}: Props)=>{
     const closeModal = ()=>{
         setOpen(false);
         document.body.classList.remove('noscroll');
+
+        onClose && onClose();
     }
 
     useEffect(()=>{
