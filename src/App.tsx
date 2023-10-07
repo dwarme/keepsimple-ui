@@ -2,6 +2,7 @@
 import './App.css';
 import './lib/css/theme/theme.css'
 import './lib/css/theme/typography.css'
+import './lib/css/theme/form.css'
 import './lib/css/theme/animation.css'
 import './lib/css/theme/nav/localnav.css'
 import './lib/css/theme/footer.css'
@@ -12,6 +13,12 @@ import LocalNav from './lib/components/template/NavBar/LocalNav/LocalNav';
 import Footer from './lib/components/template/Footer/Footer';
 import Gallery from './lib/components/template/Gallery/Gallery';
 import Modal from './lib/components/overlay/Modal/Modal';
+
+import Primary from './lib/components/ecommerce/selection/variant-color/primary/Primary'
+import Summary from './lib/components/ecommerce/summary/Summary';
+import ProductHeader from './lib/components/ecommerce/product-header/ProductHeader';
+import ProductSelection from './lib/components/ecommerce/selection/ProductSelection';
+import GalleryZoomable from './lib/components/ecommerce/gellery/zoomable/GalleryZoomable';
 
 function App() {
   return (
@@ -68,6 +75,16 @@ function App() {
           <p>Some text</p>
         </div>
       </Modal>
+
+      <div className='large-4'>
+            <ProductHeader />
+            <ProductSelection />
+            <Summary />
+      </div>
+
+      <div className='width-full'>
+        <GalleryZoomable />
+      </div>
 
       <button id="modal-toggle-047274" className='button'>Open Modal</button>
       

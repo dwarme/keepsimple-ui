@@ -13,6 +13,10 @@ interface InputProps {
     onChange?: (value: string) => void;
     minLength?: number;
     maxLength?: number;
+    max?: number;
+    min?: number;
+    inputMode?: 'none' | 'text' | 'tel' | 'url' | 'email' | 'numeric' | 'decimal' | 'search' | undefined;
+    autoComplete?: 'on' | 'off' | 'given-name' | 'family-name' | 'password' | 'new-password' | 'email' | 'tel' | 'address-line1' | 'address-line2' | 'postal-code' | 'country';
     disabled?: boolean;
     error?: boolean;
     message?: string;
@@ -28,8 +32,9 @@ const Input: React.FC<InputProps> = (props) => {
     }, [props])
 
     const debounceInput = useMemo(() => debounce(inputChangeHandle, 300), [inputChangeHandle])
-
     const inputClassName = `${textEntered?.length > 0 ? 'form-textbox-entered' : ''}`;
+    const formMessageID = props.id ? `form-message-${props.id}` : undefined;
+
     return (
         <div className={`form-textbox ${props.error ? ' is-error' : ''}`}>
             <input
@@ -42,18 +47,24 @@ const Input: React.FC<InputProps> = (props) => {
                 disabled={props.disabled}
                 required={props.required}
                 autoCapitalize={'off'}
-                autoComplete={'off'}
+                autoComplete={props.autoComplete}
                 autoCorrect={'off'}
-                spellCheck={'false'}
+                spellCheck={false}
                 minLength={props.minLength}
                 maxLength={props.maxLength}
+                max={props.max}
+                min={props.min}
+                inputMode={props.inputMode}
+                aria-describedby={formMessageID}
             />
 
-            <span className="form-textbox-label">{props.label}</span>
+            <span className="form-textbox-label">
+                {props.label}
+            </span>
 
             {props.error && props.message &&
                 <div className="form-message-wrapper">
-                    <span className="form-message">{props.message}</span>
+                    <span className="form-message" id={formMessageID}>{props.message}</span>
                 </div>
             }
         </div>

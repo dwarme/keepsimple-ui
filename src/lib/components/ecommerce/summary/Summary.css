@@ -1,0 +1,193 @@
+.ec-flagship-summary {
+    background-color: #fbfbfd;
+    padding: 30px;
+    margin-top: 30px
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .ec-flagship-summary {
+        margin-left: -7%;
+        margin-right: -7%;
+        padding-left: 6.25%;
+        padding-right: 6.25%;
+        border-bottom: 1px solid #d2d2d7
+    }
+}
+
+.ec-flagship-summary .price-point+.price-point {
+    display: block
+}
+
+
+
+.ec-summary-disabled>div {
+    opacity: .32;
+    pointer-events: none
+}
+
+.ec-summary-disabled .ec-summary-price-box {
+    opacity: 1;
+    pointer-events: auto
+}
+
+
+
+.ec-summary-price-box {
+    margin-bottom: 30px
+}
+
+.ec-summary-price-box .ec-prices-currentprice {
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .004em;
+    font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+
+    .ec-summary-price-box .ec-prices-currentprice {
+        font-size: 28px;
+        line-height: 1.14286;
+        font-weight: 600;
+        letter-spacing: .007em;
+        font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+    }
+
+}
+
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+
+    .ec-summary-price-box .ec-prices-currentprice {
+        font-size: 28px;
+        line-height: 1.14286;
+        font-weight: 600;
+        letter-spacing: .007em;
+        font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+    }
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+
+    .ec-summary-price-box .ec-prices-currentprice {
+        font-size: 24px;
+        line-height: 1.16667;
+        font-weight: 600;
+        letter-spacing: .009em;
+        font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+    }
+}
+
+.ec-summary-price-box .ec-prices-previousprice {
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: .007em;
+    font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+
+    .ec-summary-price-box .ec-prices-previousprice {
+        font-size: 24px;
+        line-height: 1.16667;
+        font-weight: 600;
+        letter-spacing: .009em;
+        font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+    }
+
+}
+
+.ec-summary-quotes-box {
+    border-top: 1px solid #d2d2d7
+}
+
+.ec-summary-quotes-header {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    width: 100%;
+    padding-top: 20px
+}
+
+.ec-summary-quotes-box .ec-summary-quote {
+    padding-top: 16px
+}
+
+.ec-summary-quotes-box .ec-summary-quote:first-child {
+    padding-top: 20px
+}
+
+.ec-quote-info {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 16px
+}
+
+.ec-quote-icon {
+    margin-top: 2px;
+    margin-right: 12px;
+    transform: none;
+    position: static;
+}
+
+.ec-quote-icon .svgicon{
+    display: block;
+    fill: currentColor;
+}
+
+.ec-quote-icon .svgicon-reduced{
+    margin: -4px;
+}
+
+.ec-quote-details{
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.ec-summary-button-box {
+    display: flex;
+    align-items: center;
+    flex-flow: row-reverse
+}
+
+.ec-summary-button {
+    flex-grow: 2;
+    margin-top: 23px
+}
+
+.ec-summary-button-after {
+    width: 45px;
+    text-align: right
+}
+
+.ec-summary-button-before {
+    width: 45px;
+    text-align: left
+}
+
+.ec-summary .typography-label {
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 600;
+    letter-spacing: .009em;
+    font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .ec-summary .typography-label {
+        font-size: 21px;
+        line-height: 1.19048;
+        font-weight: 600;
+        letter-spacing: .011em;
+        font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+    }
+}
+

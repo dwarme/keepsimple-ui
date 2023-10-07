@@ -1,0 +1,51 @@
+.ec-product-header {
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding-top: 40px
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .ec-product-header {
+        text-align: center;
+        padding-top: 20px
+    }
+}
+
+.ec-product-header h1 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0;
+    font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding-bottom: 11px
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .ec-product-header h1 {
+        font-size: 32px;
+        line-height: 1.125;
+        font-weight: 600;
+        letter-spacing: .004em;
+        font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+    }
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .ec-product-header h1 {
+        font-size: 28px;
+        line-height: 1.14286;
+        font-weight: 600;
+        letter-spacing: .007em;
+        font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+    }
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .ec-product-header h1 {
+        padding-top: 6px;
+        padding-bottom: 13px
+    }
+}

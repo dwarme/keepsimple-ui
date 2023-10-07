@@ -1,0 +1,176 @@
+
+.form-selector-swatch .form-selector-label {
+    min-height: 6.05882rem
+}
+.form-selector-violator.form-selector-swatch .form-selector-label {
+    justify-content: flex-start
+}
+
+.form-selector-violator.form-selector-swatch .form-selector-label .colornav-swatch {
+    margin-top: .52941rem;
+    margin-bottom: .23529rem
+}
+
+.form-selector-violator.form-selector-swatch .form-selector-label .violator-frameless {
+    font-size: 10px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: .008em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding-top: 4px;
+    padding-bottom: 7px
+}
+
+
+
+.ec-productselection .rf-product-dimension-with-gallery {
+    padding: 20px 0 56px
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .ec-productselection .rf-product-dimension-with-gallery {
+        padding: 40px 0
+    }
+
+    .ec-productselection .rf-product-dimension-with-gallery .ec-productselection-dimension {
+        padding: 0
+    }
+}
+
+.ec-productselection-dimension {
+    margin-top: 0;
+    padding: 0 0 26px
+}
+
+.ec-productselection-dimension .ec-dimension-selector-group {
+    margin-top: 0
+}
+
+.ec-productselection-dimension .price-point+.price-point {
+    display: block
+}
+
+.ec-productselection-dimension .price-point-rate,
+.ec-productselection-dimension .price-point-terms {
+    display: none
+}
+
+.ec-productselection-dimension-header {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 600
+}
+
+
+.ec-collapsable:first-child .ec-productselection-dimension-header {
+    padding-top: 0
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .ec-collapsable:first-child .ec-productselection-dimension-header {
+        padding-top: 20px
+    }
+}
+
+.ec-collapsable-dimension .ec-productselection-dimension-header {
+    padding-top: 25px;
+    opacity: 1;
+    transition: opacity .2s ease-in-out .1s, transform .3s ease-in-out
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .ec-collapsable-dimension .ec-productselection-dimension-header {
+        padding-top: 23px
+    }
+}
+
+.ec-productselection-dimension-footer {
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin-top: -15px;
+    padding-bottom: 28px
+}
+
+.ec-productselection-dimensioncapacity .form-selector-title {
+    font-size: 29px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: .008em;
+    font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.ec-productselection-dimensionscreensize .as-price-installments {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+}
+
+.ec-productselection-dimension-footer .as-dimension-colordesc {
+    display: flex;
+    align-items: center;
+    padding: 6px 0 4px;
+    margin-top: 0
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .ec-productselection-dimension-footer .as-dimension-colordesc {
+        flex-direction: column;
+        padding: 20px 0 0;
+        text-align: center
+    }
+}
+
+.ec-productselection-dimension-footer .as-dimension-colordesc .as-dimension-colordesc-img {
+    padding-right: 12px
+}
+
+.ec-productselection-dimension-footer .as-dimension-colordesc .as-dimension-colordesc-content {
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #1d1d1f
+}
+
+
+.ec-dimension .form-selector-swatch img {
+    width: 32px;
+    height: 32px
+}
+
+
+.ec-productselection-dimensioncolor .form-selector-swatch .form-selector-label {
+    padding: 22px 15px 18px;
+}
+
+.ec-productselection-dimensioncolor .form-selector-input.focused~.form-selector-label,
+.ec-productselection-dimensioncolor .form-selector-input:checked~.form-selector-label,
+.ec-productselection-dimensioncolor .form-selector-input:focus~.form-selector-label {
+    padding: 21px 14px 17px;
+}
+
+.ec-productselection-dimensioncolor .form-label-small + span.form-label-small {
+    min-height: 1.8824rem;
+}
+
+@media only screen and (max-width: 1023px) and (max-device-width: 736px) {
+
+    .ec-productselection-dimensioncolor .form-selector-swatch .form-selector-label {
+        padding: 20px 15px 16px;
+    }
+
+    .ec-productselection-dimensioncolor .form-selector-input.focused~.form-selector-label,
+    .ec-productselection-dimensioncolor .form-selector-input:checked~.form-selector-label,
+    .ec-productselection-dimensioncolor .form-selector-input:focus~.form-selector-label {
+        padding: 19px 14px 15px;
+    }
+}

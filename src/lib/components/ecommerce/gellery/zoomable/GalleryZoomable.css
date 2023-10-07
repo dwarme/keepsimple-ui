@@ -1,0 +1,430 @@
+.as-zoomable {
+    margin: 20px auto;
+    clear: both;
+    opacity: 0;
+    transition: opacity .3s
+}
+
+.as-zoomable.as-zoomable-isready {
+    opacity: 1
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .as-zoomable {
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch
+    }
+
+    .as-zoomable-iszommed .as-zoomable,
+    .as-zoomable-iszomming .as-zoomable {
+        overflow: visible
+    }
+
+    .as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable {
+        width: auto
+    }
+}
+
+.as-zoomable-inlinecontainer {
+    margin: 0 auto;
+    position: relative
+}
+
+.as-zoomable-iszommed .as-zoomable-inlinecontainer,
+.as-zoomable-iszomming .as-zoomable-inlinecontainer {
+    z-index: 9999
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-inlinecontainer {
+        max-width: 100%
+    }
+}
+
+.as-zoomable-content {
+    position: absolute;
+    transition: left .3s, top .3s, width .3s, height .3s, transform .3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 0;
+    overflow: hidden
+}
+
+.as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-content {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    min-width: 1024px
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-content {
+        min-width: auto
+    }
+}
+
+.as-zoomable-gallery {
+    z-index: 1;
+    position: relative;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    transition: width .3s, left .3s
+}
+
+.as-zoomable-scrollfix .as-zoomable-gallery {
+    transition: width 0s, left 0s
+}
+
+.as-zoomable-gallery.as-zoomable-gallery-dark {
+    background: #1c1c1c
+}
+
+.as-zoomable-gallery-item {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    float: left;
+    min-height: 2px;
+    display: block;
+    text-align: center;
+    height: 100%;
+    overflow: hidden
+}
+
+.as-zoomable-content,
+.as-zoomable-inlinecontainer {
+    height: 143px
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+
+    .as-zoomable-content,
+    .as-zoomable-inlinecontainer {
+        height: 100px
+    }
+}
+
+.as-zoomable-gallery-large {
+    width: 242px
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .as-zoomable-gallery-large {
+        width: 169px
+    }
+}
+
+.as-zoomable-gallery-medium {
+    width: 168px
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .as-zoomable-gallery-medium {
+        width: 117px
+    }
+}
+
+.as-zoomable-gallery-small {
+    width: 133px
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .as-zoomable-gallery-small {
+        width: 93px
+    }
+}
+
+.as-zoomable-inlinecontrols {
+    z-index: 1;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    transition: transform .3s
+}
+
+.as-zoomable-inlinecontrols>li {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    float: left;
+    min-height: 2px;
+    height: 100%
+}
+
+.as-zoomable-inlinecontrols>li button {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.as-zoomable-iszommed .as-zoomable-inlinecontrols,
+.as-zoomable-iszomming .as-zoomable-inlinecontrols {
+    display: none
+}
+
+.as-zoomable-inlinecontrols:hover,
+.as-zoomable-inlinecontrols:hover+.as-zoomable-content {
+    transform: scale(1.02)
+}
+
+.as-zoomable-ispagezommed .as-zoomable-inlinecontrols:hover,
+.as-zoomable-ispagezommed .as-zoomable-inlinecontrols:hover+.as-zoomable-content,
+.as-zoomable-iszommed .as-zoomable-inlinecontrols:hover,
+.as-zoomable-iszommed .as-zoomable-inlinecontrols:hover+.as-zoomable-content,
+.as-zoomable-iszomming .as-zoomable-inlinecontrols:hover,
+.as-zoomable-iszomming .as-zoomable-inlinecontrols:hover+.as-zoomable-content {
+    transform: none
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+
+    .as-zoomable-inlinecontrols:hover,
+    .as-zoomable-inlinecontrols:hover+.as-zoomable-content {
+        transform: none
+    }
+}
+
+@media (inverted-colors) {
+
+    .as-zoomable-gallery img,
+    .as-zoomable-gallery video {
+        filter: invert(1)
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .as-zoomable * {
+        transition: none !important
+    }
+}
+
+.as-zoomable-ispagezommed.as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-close {
+    position: absolute
+}
+
+.as-zoomable-ispagezommed.as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-content {
+    overflow: hidden
+}
+
+.as-zoomable-ispagezommed.as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-next,
+.as-zoomable-ispagezommed.as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-previous {
+    display: none
+}
+
+.as-zoomable-gallery-item img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: block
+}
+
+.as-zoomable-gallery-item img.as-zoomable-gallery-image {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none
+}
+
+.as-zoomable-iszommed .as-zoomable-gallery-item img.as-zoomable-gallery-image,
+.as-zoomable-iszomming .as-zoomable-gallery-item img.as-zoomable-gallery-image {
+    display: block
+}
+
+.as-zoomable-gallery-item video {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    max-height: 100%;
+    display: none
+}
+
+.as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-gallery-item video {
+    display: block
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .as-zoomable-gallery-item video.as-zoomable-videopaused {
+        opacity: 0
+    }
+}
+
+.as-zoomable-videobtn {
+    position: absolute;
+    z-index: 3;
+    width: 100px;
+    padding: 5px 0;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -50px;
+    color: #06c;
+    text-align: center;
+    cursor: pointer;
+    transition: color .3s;
+    display: none
+}
+
+.as-zoomable-videobtn:hover {
+    color: #1d1d1f
+}
+
+html.touch .as-zoomable-videobtn:hover {
+    color: #06c
+}
+
+.as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-videobtn {
+    display: block
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+    .as-zoomable-videobtn {
+        font-size: 14px;
+        bottom: 35px
+    }
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) and (orientation:landscape) {
+    .as-zoomable-videobtn {
+        bottom: 20px
+    }
+}
+
+.as-zoomable-close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: opacity .6s, background-color .3s, color .3s;
+    opacity: 0;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.4;
+    font-weight: 700;
+    display: none
+}
+
+.as-zoomable-close:focus {
+    box-shadow: 0 0 0 2px #0071e3;
+    outline: none
+}
+
+html.as-mouseuser .as-zoomable-close:focus:not(input):not(textarea):not(select) {
+    box-shadow: none
+}
+
+.as-zoomable-iszommed .as-zoomable-close {
+    display: block
+}
+
+.as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-close {
+    position: fixed;
+    opacity: 1;
+    z-index: 2
+}
+
+.as-zoomable-next,
+.as-zoomable-previous {
+    position: absolute;
+    top: 50%;
+    transition: opacity .6s, background-color .3s, color .3s;
+    opacity: 0
+}
+
+.as-zoomable-next.paddlenav-arrow,
+.as-zoomable-previous.paddlenav-arrow {
+    width: 42px;
+    height: 42px;
+    border-radius: 42px;
+    font-size: 42px;
+    line-height: 42px;
+    margin-top: -21px
+}
+
+.as-zoomable-iszommed .as-zoomable-content .as-zoomable-next.paddlenav-arrow,
+.as-zoomable-iszommed .as-zoomable-content .as-zoomable-previous.paddlenav-arrow {
+    display: block
+}
+
+.as-zoomable-content .as-zoomable-next.paddlenav-arrow,
+.as-zoomable-content .as-zoomable-previous.paddlenav-arrow {
+    display: none
+}
+
+.as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-next,
+.as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-previous {
+    position: fixed;
+    opacity: 1;
+    z-index: 2
+}
+
+.as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-next:disabled,
+.as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-previous:disabled {
+    opacity: 0
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+
+    .as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-next,
+    .as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-previous {
+        opacity: 0
+    }
+
+    .as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-next:active,
+    .as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-next:focus,
+    .as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-previous:active,
+    .as-zoomable-iszommed:not(.as-zoomable-iszomming) .as-zoomable-previous:focus {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width:1023px) and (max-device-width:736px) {
+
+    .as-zoomable-next,
+    .as-zoomable-previous {
+        margin-top: -9999px
+    }
+
+    .as-zoomable-next:active,
+    .as-zoomable-next:focus,
+    .as-zoomable-previous:active,
+    .as-zoomable-previous:focus {
+        margin-top: -21px
+    }
+}
+
+.as-zoomable .as-zoomable-close,
+.as-zoomable .paddlenav-framed .paddlenav-arrow {
+    background-color: rgba(0, 0, 0, .25);
+    color: #fff
+}
+
+.as-zoomable .as-zoomable-close:focus,
+.as-zoomable .as-zoomable-close:hover,
+.as-zoomable .paddlenav-framed .paddlenav-arrow:focus,
+.as-zoomable .paddlenav-framed .paddlenav-arrow:hover {
+    background-color: rgba(0, 0, 0, .45);
+    color: hsla(0, 0%, 100%, .8)
+}
